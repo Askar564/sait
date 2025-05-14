@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="header">
+        <span class="menu-icon">☰</span>
+        <h1>Главная</h1>
+    </div>
+    <div class="dashboard">
+        <div class="cards">
+            <div class="card">
+                <h2>Клиенты</h2>
+                <p>4</p>
+                <button>В клиенты</button>
+            </div>
+            <div class="card">
+                <h2>Продукты</h2>
+                <p>5</p>
+                <button>В продукты</button>
+            </div>
+            <div class="card">
+                <h2>Заказы</h2>
+                <p>9</p>
+                <button>В заказы</button>
+            </div>
+        </div>
+        <div class="tables">
+            <div class="table">
+                <h3>Последние заказы</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Клиент</th>
+                            <th>Дата</th>
+                            <th>Количество</th>
+                            <th>Статус</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>9</td>
+                            <td>Шахруз</td>
+                            <td>2025-05-14</td>
+                            <td>56000.0тг</td>
+                            <td><span class="status completed">completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Ильхом</td>
+                            <td>2025-05-13</td>
+                            <td>23200.0тг</td>
+                            <td><span class="status completed">completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Ильхом</td>
+                            <td>2025-05-13</td>
+                            <td>205000.0тг</td>
+                            <td><span class="status completed">completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Ильхом</td>
+                            <td>2025-05-13</td>
+                            <td>203000.0тг</td>
+                            <td><span class="status completed">completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Бахтиёр Халметов</td>
+                            <td>2025-05-10</td>
+                            <td>4200.0тг</td>
+                            <td><span class="status completed">completed</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table">
+                <h3>Продукты с низким запасом</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Продукт</th>
+                            <th>Текущий запас</th>
+                            <th>Действие</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lavash</td>
+                            <td><span class="low-stock red">1</span></td>
+                            <td><button>Обновить запасы</button></td>
+                        </tr>
+                        <tr>
+                            <td>Говядина</td>
+                            <td><span class="low-stock yellow">6</span></td>
+                            <td><button>Обновить запасы</button></td>
+                        </tr>
+                        <tr>
+                            <td>Банан</td>
+                            <td><span class="low-stock yellow">5</span></td>
+                            <td><button>Обновить запасы</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
