@@ -84,15 +84,13 @@ header h1 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
     flex: 1;
-}
-
-.table h3 {
-    margin-bottom: 10px;
+    overflow-x: auto; /* Добавляем горизонтальную прокрутку */
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
+    min-width: 600px; /* Минимальная ширина таблицы */
 }
 
 table th, table td {
@@ -202,6 +200,10 @@ table th {
 
     .table {
         padding: 15px; /* Уменьшенные отступы внутри таблиц */
+    }
+
+    table {
+        min-width: unset; /* Убираем минимальную ширину для телефонов */
     }
 
     table th, table td {
